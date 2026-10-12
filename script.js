@@ -29,11 +29,11 @@ for (const val of Object.values(data)) {
 
 // render main page
 const feat = PRESENTATION().info;
-const strengthSection = document.querySelector("#strength");
+const myCareerSection = document.querySelector("#my-career");
 for (const [key, val] of Object.entries(feat)) {
   const headder = document.createElement("h2");
   headder.textContent = key;
   const ul = createList(val, "content-list-title", "");
-  strengthSection.appendChild(headder);
-  strengthSection.appendChild(ul);
+  myCareerSection.appendChild(headder);
+  myCareerSection.appendChild(ul);
 }
